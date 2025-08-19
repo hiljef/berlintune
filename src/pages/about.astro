@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "about berlintune";
 
 const identity = {
@@ -9,12 +11,16 @@ const identity = {
   prod: ["songs", "improvisations", "texts", "collages", "radio plays"],
 };
 
-const form = ["records", "tapes", "cds", "zines", "books", "digital", "websites"];;
+const form = ["records", "tapes", "cds", "zines", "books", "digital", "websites"];
 
 const collab = true;
 const contact = true;
 const free = false;
 const number = 3;
+
+const formColor = "red";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
@@ -24,6 +30,18 @@ const number = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		    <style define:vars={{formColor, fontWeight, textCase}}>
+      			h1 {
+       			 color: purple;
+        		 font-size: 4rem;
+      			}
+      			  .form {
+      			color: black;
+      			color: var(--formColor);
+    			font-weight: var(--fontWeight);
+   			text-transform: var(--textCase);
+  			}
+    		 </style>
 	</head>
 	<body>
 		<a href="/">home</a>
@@ -43,7 +61,7 @@ const number = 3;
 		</ul>
 		<p>we publish music in the following formats</p>
 		<ul>
- 		 {form.map((form) => <li>{form}</li>)}
+ 		 {form.map((form) => <li class="form">{form}</li>)}
 		</ul>
 		
 		{collab && <p>we are open for creative collaborations</p>}
