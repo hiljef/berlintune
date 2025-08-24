@@ -1,7 +1,11 @@
 ---
+import Header from '../components/Header.astro';
+
+import Footer from '../components/Footer.astro';
+
 import '../styles/global.css';
 
-const pageTitle = "berlintune news";
+const pageTitle = "news";
 ---
 
 <html lang="en">
@@ -13,10 +17,10 @@ const pageTitle = "berlintune news";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">home</a>
-		<a href="/about/">about</a>
-		<a href="/news/">news</a>
-		
+	<div class="div1">
+
+		<Header />
+
 		<h1>{pageTitle}</h1>
                 <p>latest news from berlintune studio</p>
                 <ul>
@@ -26,5 +30,10 @@ const pageTitle = "berlintune news";
       			<li><a href="/posts/post-3/">news 3</a></li>
       			-->
     		</ul>
+    		    <Footer />
+    		</div>
+    		 <script>
+                     import "../scripts/menu.js";
+             </script>
 	</body>
 </html>

@@ -1,0 +1,62 @@
+---
+import Header from '../components/Header.astro';
+
+import Footer from '../components/Footer.astro';
+
+import '../styles/global.css';
+
+const { pageTitle } = Astro.props;
+
+const artist = {
+  hj: "hilary jeffery",
+  ep: "eleni poulou",
+  or: "organza ray",
+  };
+
+const form = ["records", "tapes", "cds", "zines", "books", "digital", "websites"];
+
+const web = ["HTML", "CSS", "Markdown", "JavaScript", "React"];
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<div class="div1">
+
+		<Header />
+
+		<h1>{pageTitle}</h1>
+                <p>studio in berlin</p>
+
+                <p>home of</p>
+		<ul>
+ 		 <li>{artist.hj}</li>
+ 		 <li>{artist.ep}</li>
+ 		 <li>{artist.or}</li>
+ 		</ul>
+
+ 		<p>producing + publishing</p>
+		<ul>
+ 		 {form.map((form) => <li>{form}</li>)}
+		</ul>
+
+		<p>website currently being built with Astro using</p>
+		<ul>
+ 		 {web.map((web) => <li>{web}</li>)}
+		</ul>
+
+        <slot />
+
+ 		<Footer />
+    		</div>
+    		  <script>
+                     import "../scripts/menu.js";
+             </script>
+	</body>
+</html>
