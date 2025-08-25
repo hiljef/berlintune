@@ -1,7 +1,33 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "berlintune";
+const pageTitle ="";
+
+const artist = {
+  hj: "hilary jeffery",
+  ep: "eleni poulou",
+  or: "organza ray",
+  };
+
+const form = ["records", "tapes", "cds", "zines", "books", "digital", "websites"];
+
+const web = ["HTML", "CSS", "Markdown", "JavaScript", "React"];
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>#############</h2>
+          <p><b>studio in berlin</b></p>
+                <p>home of</p>
+		            <ul>
+ 		                <li>{artist.hj}</li>
+ 		                 <li>{artist.ep}</li>
+ 		                 <li>{artist.or}</li>
+ 		            </ul>
+
+ 		        <p>producing + publishing</p>
+		                <ul>
+ 		                 {form.map((form) => <li>{form}</li>)}
+		                </ul>
+
+		        <p>website currently being built with Astro using</p>
+		                <ul>
+ 		                {web.map((web) => <li>{web}</li>)}
+		                </ul>
 </BaseLayout>

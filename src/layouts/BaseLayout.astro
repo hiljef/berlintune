@@ -32,26 +32,8 @@ const web = ["HTML", "CSS", "Markdown", "JavaScript", "React"];
 		<Header />
 
 		<h1>{pageTitle}</h1>
-                <p>studio in berlin</p>
 
-                <p>home of</p>
-		<ul>
- 		 <li>{artist.hj}</li>
- 		 <li>{artist.ep}</li>
- 		 <li>{artist.or}</li>
- 		</ul>
-
- 		<p>producing + publishing</p>
-		<ul>
- 		 {form.map((form) => <li>{form}</li>)}
-		</ul>
-
-		<p>website currently being built with Astro using</p>
-		<ul>
- 		 {web.map((web) => <li>{web}</li>)}
-		</ul>
-
-        <slot />
+                <slot />
 
  		<Footer />
     		</div>

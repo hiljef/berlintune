@@ -1,10 +1,5 @@
 ---
-import Header from '../components/Header.astro';
-
-import Footer from '../components/Footer.astro';
-
-import '../styles/global.css';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "about";
 
 const identity = {
@@ -26,31 +21,30 @@ const formColor = "red";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
+<BaseLayout pageTitle={pageTitle}>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-	<div class="div1">
+	<!-- <style is:global define:vars={{formColor, fontWeight, textCase}}>
+ 		 h1 {
+    		color: blue;
+    		font-size: 2rem;
+ 		 }
+		.form {
+	        color: var(--formColor);
+    		font-weight: var(--fontWeight);
+    		text-transform: var(--textCase);
+ 	        }
+		</style>-->
 
-		<Header />
-
-		<h1>{pageTitle}</h1>
-                <p>composition studio in berlin</p>
-
+                <p><b>studio in berlin</b></p>
                 <p>who we are</p>
-		<ul>
- 		 <li>{identity.hj} + {identity.ep}</li>
- 		 <li>we live and work in {identity.city} where we compose and record {identity.act1}</li>
-  		{identity.prod.length >= 5 &&
-    		<li>our productions include: {identity.prod[0]}, {identity.prod[1]}, {identity.prod[2]}, {identity.prod[3]} and 			{identity.prod[4]}</li>
-  }
-		</ul>
+		                <ul>
+ 		                    <li>{identity.hj} + {identity.ep}</li>
+ 		                    <li>we live and work in {identity.city} where we compose and record {identity.act1}</li>
+  		                       {identity.prod.length >= 5 &&
+    		                <li>our productions include: {identity.prod[0]}, {identity.prod[1]}, {identity.prod[2]}, {identity.prod[3]} and {identity.prod[4]}</li>
+                             }
+		                </ul>
+
 		<p>we publish music in the following formats</p>
 		<ul>
  		 {form.map((form) => <li class="form">{form}</li>)}
@@ -60,10 +54,4 @@ const textCase = "uppercase";
 		{contact && <p>we will be glad to hear from you</p>}
 		{free && <p>we will work for free</p>}
 		{number === 3 ? <p>the studio is big enough for 3 people</p> : <p>the studio has no space</p>}
-		<Footer />
-    		</div>
-    		 <script>
-                     import "../scripts/menu.js";
-             </script>
-	</body>
-</html>
+</BaseLayout>
