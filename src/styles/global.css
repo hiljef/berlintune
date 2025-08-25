@@ -29,8 +29,8 @@ body {
 }
 
 .textart {
-    font-size: 1vw; /* Adjust size based on viewport width */
-    color: blue;
+    font-size: 2vw; /* Adjust size based on viewport width */
+    color: white;
     white-space: pre; /* Preserve whitespace */
     text-align: left;
 }
