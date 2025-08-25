@@ -1,11 +1,14 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'berlintune news'
+pubDate: 26.08.2025
+description: 'blog'
+author: 'hiljef'
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+    url: 'https://hiljef.com/wp-content/uploads/2025/08/berlintune.png'
+    alt: 'berlintune'
+tags: ["astro", "blog", "berlintune"]
 ---
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+previous [post](/posts/post-1/)
+
+ <a href="https://hiljef.com" target="blank">hiljef.com</a>
