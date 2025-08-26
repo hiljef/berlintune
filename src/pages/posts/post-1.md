@@ -13,7 +13,7 @@ tags: ["astro", "blog", "berlintune"]
 
 1. **new release**: organza ray + pyrolator
 
-<img src='https://hiljef.com/wp-content/uploads/2025/01/side_language_passage-scaled.jpg' width="300" alt='organza ray + pyrolator' />
+<img src='https://hiljef.com/wp-content/uploads/2025/01/side_language_passage-scaled.jpg' style="width: 50%; height: auto;" alt='organza ray + pyrolator' />
 
 <a href="https://organzaray.bandcamp.com/album/side-language-passage" target="blank">organzaray.bandcamp.com</a>
 
@@ -23,7 +23,7 @@ tags: ["astro", "blog", "berlintune"]
 
 2. **astro school**: learning how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder + more
 
-<img src="https://docs.astro.build/assets/rose.webp" width="300" alt='The Astro logo on a dark background with a pink glow.' />
+<img src="https://docs.astro.build/assets/rose.webp" style="width: 50%; height: auto;" alt='The Astro logo on a dark background with a pink glow.' />
 
 <br>
 
