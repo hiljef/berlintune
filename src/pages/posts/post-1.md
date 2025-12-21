@@ -15,7 +15,7 @@ tags: ["astro", "blog", "news", "berlintune"]
 
 <img src='https://hiljef.com/wp-content/uploads/2025/01/mavra_valista.jpg' style="width: 50%; height: auto;" alt='organza ray + tony morris' />
 
-*soon...*
+<a href="https://organzaray.bandcamp.com/track/mavra-valista" target="blank">organzaray.bandcamp.com/track/mavra-valista</a>
 
 <br>
 
