@@ -10,23 +10,30 @@ const artist = {
 
 const form = ["records", "tapes", "cds", "zines", "books", "digital", "websites"];
 
-const web = ["HTML", "CSS", "Markdown", "JavaScript", "React"];
+const school = ["trombone", "trumpet", "euphonium", "poetry", "songwriting", "composition", "improvisation", "music theory", "arrangement"];
+
+const web = ["html", "css", "markdown", "javascript", "react"];
 ---
 <BaseLayout pageTitle={pageTitle}>
-          <p><b>studio in berlin</b></p>
-                <p>home of</p>
+          <p><b>private studio + music school</b></p>
+                <p><b>home of</b></p>
 		            <ul>
  		                <li>{artist.hj}</li>
  		                 <li>{artist.ep}</li>
  		                 <li>{artist.or}</li>
  		            </ul>
 
- 		        <p>producing + publishing</p>
+ 		        <p><b>producing + publishing</b></p>
 		                <ul>
  		                 {form.map((form) => <li>{form}</li>)}
 		                </ul>
+		                
+		        <p><b>teaching</b></p>
+		                <ul>
+ 		                 {school.map((school) => <li>{school}</li>)}
+		                </ul>
 
-		        <p>website currently being built with Astro using</p>
+		        <p><b>website being built with Astro using</b></p>
 		                <ul>
  		                {web.map((web) => <li>{web}</li>)}
 		                </ul>
